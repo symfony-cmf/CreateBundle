@@ -41,6 +41,8 @@ class SymfonyCmfCreateExtension extends Extension
 
         $container->setParameter($this->getAlias().'.map', $config['map']);
 
+        $container->setParameter($this->getAlias().'.rdfmapper', $config['rdfmapper']);
+
         $container->setParameter($this->getAlias().'.stanbol_url', $config['stanbol_url']);
 
         $container->setParameter($this->getAlias().'.role', $config['role']);
@@ -51,6 +53,8 @@ class SymfonyCmfCreateExtension extends Extension
             $config['plain_text_types'][] = 'dcterms:title';
         }
         $container->setParameter($this->getAlias().'.plain_text_types', $config['plain_text_types']);
+
+        $container->setParameter($this->getAlias().'.create_routes_types', $config['create_routes_types']);
 
         if ($config['auto_mapping']) {
             foreach ($container->getParameter('kernel.bundles') as $class) {
