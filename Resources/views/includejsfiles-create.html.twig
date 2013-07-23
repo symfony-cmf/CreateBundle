@@ -9,7 +9,7 @@
     cmfCreateHalloImageSearch = '{{ path('cmf_create_image_search') }}';
     cmfCreateHalloLinkRelatedPath = '{{ path('cmf_create_image_related') }}';
     {%  endif %}
-    var cmfCreatePutDocument = '{{ path('cmf_create_put_document_base') }}';
+    var cmfCreatePutDocument = '{{ path('cmf_create_put_document_base', {'_locale': app.request.locale}) }}';
     var cmfCreateStanbolUrl = '{{ cmfCreateStanbolUrl }}';
 
     {%  if cmfCreateHalloFixedToolbar %}
