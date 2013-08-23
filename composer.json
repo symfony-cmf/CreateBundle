@@ -20,7 +20,8 @@
         "symfony/assetic-bundle": "~2.1",
         "friendsofsymfony/rest-bundle": ">=0.12.0,<2.0",
         "jms/serializer-bundle": "0.12.*",
-        "midgard/createphp": "dev-master"
+        "midgard/createphp": "dev-master",
+        "symfony-cmf/media-bundle": "dev-master"
     },
     "require-dev": {
         "symfony-cmf/core-bundle": "~1.0.0-alpha1",
