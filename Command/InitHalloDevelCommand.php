@@ -34,8 +34,5 @@ class InitHalloDevelCommand extends Command
         if ($status) {
             die("Running git submodule sync failed with $status\n");
         }
-        if ($status) {
-            die("Running git submodule --init --recursive failed with $status\n");
-        }
     }
 }
