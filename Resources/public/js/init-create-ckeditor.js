@@ -32,7 +32,7 @@ jQuery(document).ready(function() {
                     .addClass('editing');
             }
 
-            if (params.hasOwnProperty('browse') && params.state === 'browse') {
+            if (params.hasOwnProperty('state') && params.state === 'browse') {
                 $('.create-ui-toolbar-wrapper')
                     .removeClass('editing');
             }
