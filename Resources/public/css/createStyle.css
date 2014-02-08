@@ -24,7 +24,7 @@ a.create-ui-toggle {
 }
 
 /* Create ui toolbar while editing */
-/*****************************************/
+/***********************************/
 .create-ui-toolbar-wrapper.editing {
     background: rgba(160, 216, 56, 0.8);
 }
