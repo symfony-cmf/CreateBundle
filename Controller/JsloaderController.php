@@ -147,8 +147,8 @@ class JsloaderController
         $view->setData(array(
                 'cmfCreateEditor' => $editor,
                 'cmfCreateStanbolUrl' => $this->stanbolUrl,
-                'cmfCreateImageUploadEnabled' => (boolean) $this->imageUploadEnabled,
-                'cmfCreateFixedToolbar' => (boolean) $this->fixedToolbar,
+                'cmfCreateImageUploadEnabled' => (bool) $this->imageUploadEnabled,
+                'cmfCreateFixedToolbar' => (bool) $this->fixedToolbar,
                 'cmfCreatePlainTextTypes' => json_encode($this->plainTextTypes),
                 'cmfCreateEditorBasePath' => $this->editorBasePath,
                 'cmfCreateBrowseUrl' => $browseUrl,
