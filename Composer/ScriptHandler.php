@@ -10,6 +10,7 @@
  */
 
 namespace Symfony\Cmf\Bundle\CreateBundle\Composer;
+use Composer\Script\Event;
 
 use Composer\Script\Event;
 
