@@ -55,6 +55,10 @@ class ImageController extends FileController
         ViewHandlerInterface $viewHandler,
         AccessCheckerInterface $accessChecker
     ) {
+        if (null === $rootPath) {
+            $rootPath = '/';
+        }
+        
         if (!is_subclass_of($class, 'Symfony\Cmf\Bundle\MediaBundle\ImageInterface')) {
             throw new \InvalidArgumentException(sprintf(
                 'The class "%s" does not implement Symfony\Cmf\Bundle\MediaBundle\ImageInterface',
